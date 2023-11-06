@@ -19,10 +19,12 @@
       "moby": "false",
       "dockerDashComposeVersion": "v2"
     },
+    "ghcr.io/devcontainers-contrib/features/actions-runner-noexternals:1": {},
     "ghcr.io/devcontainers/features/azure-cli:1": {
       "version": "latest",
       "installBicep": true
     },
+    
     "ghcr.io/devcontainers/features/github-cli:1": {
       "version": "latest"
     }
