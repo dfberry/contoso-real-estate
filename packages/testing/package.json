@@ -4,7 +4,11 @@
   "description": "This document will guide you through the process of setting up a new Playwright test project, and authoring and running end-to-end tests for the Contoso web application.",
   "main": "index.js",
   "scripts": {
-    "env": "azd env get-values --no-prompt > .env"
+    "env": "azd env get-values --no-prompt > .env",
+    "pretest": "bash ./get-env-vars.sh",
+    "test": "playwright test --browser=all --reporter=html",
+    "docker:prestart": "npm run pretest", 
+    "docker:run": "docker run -v ${PWD}:/app playwright"
   },
   "keywords": [],
   "author": "",

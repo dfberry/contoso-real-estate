@@ -45,11 +45,15 @@
     "4242": {
       "label": "Stripe API",
       "onAutoForward": "notify"
+    },
+    "9323": {
+      "label": "Playwright",
+      "onAutoForward": "notify"
     }
   },
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  "forwardPorts": [4280, 4242, 3000, 1337],
+  "forwardPorts": [4280, 4242, 3000, 1337,9323],
 
   // Use 'postCreateCommand' to run commands after the container is created.
   "postCreateCommand": "bash .devcontainer/post-create-command.sh",
